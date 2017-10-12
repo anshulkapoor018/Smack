@@ -10,6 +10,7 @@
 		983B0A5C378DEE1E3E9C7965 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C985686C6473A6AC5D888020 /* Pods_Smack.framework */; };
 		D80FE8E01F8E94A7009CB88A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8DF1F8E94A7009CB88A /* ChatVC.swift */; };
 		D80FE8E21F8E94B4009CB88A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8E11F8E94B4009CB88A /* ChannelVC.swift */; };
+		D82C04A11F8F98ED00C96FC3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C04A01F8F98ED00C96FC3 /* GradientView.swift */; };
 		D87A33831F8EA4CB0087DB0D /* SWRevealViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8DB1F8E592E009CB88A /* SWRevealViewController.h */; };
 		D87A33841F8EA4D80087DB0D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8DA1F8E592D009CB88A /* SWRevealViewController.m */; };
 		D8F2CCFC1F8E5597000461F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2CCFB1F8E5597000461F5 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		D80FE8DB1F8E592E009CB88A /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D80FE8DF1F8E94A7009CB88A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		D80FE8E11F8E94B4009CB88A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		D82C04A01F8F98ED00C96FC3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D8F2CCF81F8E5597000461F5 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F2CCFB1F8E5597000461F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F2CD001F8E5597000461F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 		D80FE8DD1F8E9471009CB88A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D82C04A01F8F98ED00C96FC3 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			files = (
 				D87A33841F8EA4D80087DB0D /* SWRevealViewController.m in Sources */,
 				D87A33831F8EA4CB0087DB0D /* SWRevealViewController.h in Sources */,
+				D82C04A11F8F98ED00C96FC3 /* GradientView.swift in Sources */,
 				D80FE8E01F8E94A7009CB88A /* ChatVC.swift in Sources */,
 				D80FE8E21F8E94B4009CB88A /* ChannelVC.swift in Sources */,
 				D8F2CCFC1F8E5597000461F5 /* AppDelegate.swift in Sources */,
