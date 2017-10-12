@@ -11,8 +11,11 @@
 		D80FE8E01F8E94A7009CB88A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8DF1F8E94A7009CB88A /* ChatVC.swift */; };
 		D80FE8E21F8E94B4009CB88A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8E11F8E94B4009CB88A /* ChannelVC.swift */; };
 		D82C04A11F8F98ED00C96FC3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C04A01F8F98ED00C96FC3 /* GradientView.swift */; };
+		D82C04A51F8FAE6800C96FC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C04A41F8FAE6800C96FC3 /* Constants.swift */; };
+		D82C04A71F8FB33700C96FC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C04A61F8FB33700C96FC3 /* LoginVC.swift */; };
 		D87A33831F8EA4CB0087DB0D /* SWRevealViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8DB1F8E592E009CB88A /* SWRevealViewController.h */; };
 		D87A33841F8EA4D80087DB0D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D80FE8DA1F8E592D009CB88A /* SWRevealViewController.m */; };
+		D881203E1F8FD49F008C0C68 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D881203D1F8FD49F008C0C68 /* CreateAccountVC.swift */; };
 		D8F2CCFC1F8E5597000461F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2CCFB1F8E5597000461F5 /* AppDelegate.swift */; };
 		D8F2CD011F8E5597000461F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2CCFF1F8E5597000461F5 /* Main.storyboard */; };
 		D8F2CD031F8E5597000461F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F2CD021F8E5597000461F5 /* Assets.xcassets */; };
@@ -28,6 +31,9 @@
 		D80FE8DF1F8E94A7009CB88A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		D80FE8E11F8E94B4009CB88A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		D82C04A01F8F98ED00C96FC3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		D82C04A41F8FAE6800C96FC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D82C04A61F8FB33700C96FC3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D881203D1F8FD49F008C0C68 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		D8F2CCF81F8E5597000461F5 /* Smack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F2CCFB1F8E5597000461F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F2CD001F8E5597000461F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 			children = (
 				D80FE8DF1F8E94A7009CB88A /* ChatVC.swift */,
 				D80FE8E11F8E94B4009CB88A /* ChannelVC.swift */,
+				D82C04A61F8FB33700C96FC3 /* LoginVC.swift */,
+				D881203D1F8FD49F008C0C68 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -90,6 +98,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D82C04A31F8FAE4700C96FC3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D82C04A41F8FAE6800C96FC3 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D8F2CCEF1F8E5597000461F5 = {
@@ -113,6 +129,7 @@
 		D8F2CCFA1F8E5597000461F5 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				D82C04A31F8FAE4700C96FC3 /* Utilities */,
 				D80FE8DE1F8E947A009CB88A /* Model */,
 				D80FE8DD1F8E9471009CB88A /* View */,
 				D80FE8DC1F8E9469009CB88A /* Controller */,
@@ -260,8 +277,11 @@
 			files = (
 				D87A33841F8EA4D80087DB0D /* SWRevealViewController.m in Sources */,
 				D87A33831F8EA4CB0087DB0D /* SWRevealViewController.h in Sources */,
+				D82C04A71F8FB33700C96FC3 /* LoginVC.swift in Sources */,
 				D82C04A11F8F98ED00C96FC3 /* GradientView.swift in Sources */,
 				D80FE8E01F8E94A7009CB88A /* ChatVC.swift in Sources */,
+				D881203E1F8FD49F008C0C68 /* CreateAccountVC.swift in Sources */,
+				D82C04A51F8FAE6800C96FC3 /* Constants.swift in Sources */,
 				D80FE8E21F8E94B4009CB88A /* ChannelVC.swift in Sources */,
 				D8F2CCFC1F8E5597000461F5 /* AppDelegate.swift in Sources */,
 			);
