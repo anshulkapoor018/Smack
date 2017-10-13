@@ -140,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gQJ-qR-Jh0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="-205"/>
+            <point key="canvasLocation" x="1478" y="-359"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="LOU-ud-9Fe">
@@ -405,6 +405,7 @@
                     <connections>
                         <outlet property="emailTxt" destination="dJG-hl-7Iz" id="EBs-fA-P0c"/>
                         <outlet property="passTxt" destination="h2H-2Q-1ju" id="MBq-lT-PUJ"/>
+                        <outlet property="userImg" destination="G4F-qc-Pu2" id="PdL-E4-u0P"/>
                         <outlet property="userNameTxt" destination="MTc-Zk-Gb5" id="43N-1K-0YB"/>
                         <segue destination="QqB-7o-zag" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="TIL-BU-vWh"/>
                         <segue destination="JQU-DF-cPH" kind="show" identifier="toAvatarPicker" id="dYb-bo-Mgc"/>

@@ -17,6 +17,9 @@ class CreateAccountVC: UIViewController {
     
     @IBOutlet weak var passTxt: UITextField!
     
+    @IBOutlet weak var userImg: UIImageView!
+    
+    
     //Variable(Defualt)
     var avatarName = "profileDefault"
     var avatarColor = "[0.5,0.5,0.5,1]"
@@ -24,7 +27,13 @@ class CreateAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if UserDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            avatarName = UserDataService.instance.avatarName
+        }
     }
     
     //Actions
