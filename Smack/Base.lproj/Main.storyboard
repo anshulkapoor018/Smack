@@ -187,6 +187,9 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.98039215690000003" green="0.98431372549999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="1eK-r1-V8R" eventType="touchUpInside" id="Gk4-dY-YUW"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="opU-p8-Cpa">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
@@ -239,6 +242,10 @@
                                     <action selector="createAccountBtnPressed:" destination="1eK-r1-V8R" eventType="touchUpInside" id="mtt-vW-sAs"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pUm-fF-cdX">
+                                <rect key="frame" x="169" y="255" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -246,9 +253,11 @@
                             <constraint firstItem="iQd-Gv-yBV" firstAttribute="top" secondItem="aom-3e-nle" secondAttribute="top" constant="60" id="GDH-Pd-t33"/>
                             <constraint firstItem="LB3-ni-aAH" firstAttribute="top" secondItem="aom-3e-nle" secondAttribute="top" constant="16" id="Ohh-j1-8LC"/>
                             <constraint firstItem="aom-3e-nle" firstAttribute="trailing" secondItem="LB3-ni-aAH" secondAttribute="trailing" constant="16" id="Pcd-Zb-GT3"/>
+                            <constraint firstItem="pUm-fF-cdX" firstAttribute="centerY" secondItem="dDO-Bg-OYo" secondAttribute="centerY" constant="-60" id="Q6z-ps-Fx6"/>
                             <constraint firstItem="iQd-Gv-yBV" firstAttribute="centerX" secondItem="dDO-Bg-OYo" secondAttribute="centerX" id="Qoj-fw-6dm"/>
                             <constraint firstItem="opU-p8-Cpa" firstAttribute="centerX" secondItem="dDO-Bg-OYo" secondAttribute="centerX" id="YgU-bo-1t8"/>
                             <constraint firstItem="opU-p8-Cpa" firstAttribute="top" secondItem="iQd-Gv-yBV" secondAttribute="bottom" constant="40" id="dEc-60-vxj"/>
+                            <constraint firstItem="pUm-fF-cdX" firstAttribute="centerX" secondItem="dDO-Bg-OYo" secondAttribute="centerX" id="eTD-oe-Gul"/>
                             <constraint firstItem="1YE-2C-eFk" firstAttribute="centerX" secondItem="dDO-Bg-OYo" secondAttribute="centerX" id="em4-6U-Mvm"/>
                             <constraint firstItem="7El-NF-0sK" firstAttribute="centerX" secondItem="dDO-Bg-OYo" secondAttribute="centerX" id="f81-CS-AW4"/>
                             <constraint firstItem="1YE-2C-eFk" firstAttribute="top" secondItem="opU-p8-Cpa" secondAttribute="bottom" constant="50" id="smz-df-77N"/>
@@ -257,6 +266,7 @@
                     </view>
                     <connections>
                         <outlet property="passWord" destination="9GZ-E5-AqB" id="wwl-TU-4MB"/>
+                        <outlet property="spinner" destination="pUm-fF-cdX" id="rXx-4i-aV3"/>
                         <outlet property="userName" destination="U7I-sZ-OLT" id="xrO-7j-vd5"/>
                         <segue destination="NPQ-xd-hZC" kind="show" identifier="toCreateAccount" id="GPE-Hu-oDL"/>
                     </connections>
