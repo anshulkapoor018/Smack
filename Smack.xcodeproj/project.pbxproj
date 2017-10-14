@@ -13,6 +13,7 @@
 		D82C04A11F8F98ED00C96FC3 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C04A01F8F98ED00C96FC3 /* GradientView.swift */; };
 		D82C04A51F8FAE6800C96FC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C04A41F8FAE6800C96FC3 /* Constants.swift */; };
 		D82C04A71F8FB33700C96FC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82C04A61F8FB33700C96FC3 /* LoginVC.swift */; };
+		D86A0F041F91FED000823400 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A0F031F91FED000823400 /* CircleImage.swift */; };
 		D86B3CD81F90CFD400FEEA60 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B3CD71F90CFD400FEEA60 /* RoundedButton.swift */; };
 		D86B3CDA1F90F91000FEEA60 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B3CD91F90F91000FEEA60 /* UserDataService.swift */; };
 		D86B3CDC1F913B0C00FEEA60 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86B3CDB1F913B0C00FEEA60 /* AvatarPickerVC.swift */; };
@@ -38,6 +39,7 @@
 		D82C04A01F8F98ED00C96FC3 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		D82C04A41F8FAE6800C96FC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D82C04A61F8FB33700C96FC3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D86A0F031F91FED000823400 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		D86B3CD71F90CFD400FEEA60 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		D86B3CD91F90F91000FEEA60 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		D86B3CDB1F913B0C00FEEA60 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				D82C04A01F8F98ED00C96FC3 /* GradientView.swift */,
 				D86B3CD71F90CFD400FEEA60 /* RoundedButton.swift */,
 				D86B3CDF1F913FFB00FEEA60 /* AvatarCell.swift */,
+				D86A0F031F91FED000823400 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				D80FE8E21F8E94B4009CB88A /* ChannelVC.swift in Sources */,
 				D8F2CCFC1F8E5597000461F5 /* AppDelegate.swift in Sources */,
 				D86B3CDC1F913B0C00FEEA60 /* AvatarPickerVC.swift in Sources */,
+				D86A0F041F91FED000823400 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

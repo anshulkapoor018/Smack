@@ -16,6 +16,9 @@ let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN =  "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 
+//Colors
+let smackPurplePlaceholder = #colorLiteral(red: 0.3976354599, green: 0.5083267093, blue: 0.8185241222, alpha: 0.5)
+let notif = Notification.Name("notifUserDataChanged")
 // Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
