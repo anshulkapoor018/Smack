@@ -23,6 +23,7 @@ let URL_GET_CHANNEL = "\(BASE_URL)channel/"
 //Colors
 let smackPurplePlaceholder = #colorLiteral(red: 0.3976354599, green: 0.5083267093, blue: 0.8185241222, alpha: 0.5)
 let notif = Notification.Name("notifUserDataChanged")
+
 // Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
@@ -38,6 +39,10 @@ let USER_EMAIL = "userEmail"
 
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
+]
+
+let TOKEN = [
+    "Authorization" : "Bearer \(AuthService.instance.authToken)"
 ]
 
 let BEARER_HEADER = [

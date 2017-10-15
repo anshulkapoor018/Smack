@@ -7,33 +7,54 @@
 //
 
 import Foundation
-import SwiftyJSON
 import Alamofire
+import SwiftyJSON
 
-class MessageServie{
+class MessageService {
     
-    static let instance = MessageServie()
+    static let instance = MessageService()
+    
     var channels = [Channel]()
     
-    func findAllChannel(completion: @escaping CompletionHandler){
-        Alamofire.request("URL_GET_CHANNEL", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
-            if response.result.error == nil{
-                guard let data = response.data else {return}
-                if let json = JSON(data: data).array {
-                    for item in json{
-                        let name = item["name"].stringValue
-                        let channelDescription = item["description"].stringValue
-                        let id = item["id"].stringValue
-                        let channel = Channel(channelTitle: name ,channelDesc: channelDescription, id: id)
-                        self.channels.append(channel)
-                    }
-                    print(self.channels[0].channelTitle)
-                    completion(true)
+    func findAllChannel(completion: @escaping CompletionHandler) {
+        Alamofire.request(URL_GET_CHANNEL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
+            
+            print(URL_GET_CHANNEL)
+            print("\n")
+            if response.result.error == nil {
+
+                guard let data = response.data else { return }
+                
+                do {
+                    self.channels = try JSONDecoder().decode([Channel].self, from: data)
+                } catch let error {
+                    debugPrint(error as Any)
                 }
-            }else{
+                print(self.channels)
+                print("Cusrsor 1 is here now\n")
+
+                
+//                if let json = JSON(data: data).array {
+//                    for item in json {
+//                        print("Cusrsor 2 is here now\n")
+//
+//                        let name = item["name"].stringValue
+//                        let channelDescription = item["description"].stringValue
+//                        let id = item["_id"].stringValue
+//                        let channel = Channel(channelTitle: name, channelDesc: channelDescription, id: id)
+//                        self.channels.append(channel)
+//                    }
+//                    print("Cusrsor is here now\n")
+//                    print(self.channels[0].channelTitle)
+//                    completion(true)
+//                }
+                
+            } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
             }
         }
+        
     }
+    
 }
