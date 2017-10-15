@@ -23,7 +23,7 @@ class ProfileVC: UIViewController {
     
     @IBAction func logoutPressed(_ sender: Any) {
         UserDataService.instance.logoutUser()
-        NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+        NotificationCenter.default.post(name: notif, object: nil)
         dismiss(animated: true, completion: nil)
     }
     
@@ -44,9 +44,5 @@ class ProfileVC: UIViewController {
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-    
 }
 
