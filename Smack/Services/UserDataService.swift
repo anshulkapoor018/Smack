@@ -8,7 +8,8 @@
 
 import Foundation
 
-class UserDataService{
+class UserDataService {
+    
     static let instance = UserDataService()
     
     public private(set) var id = ""
@@ -17,8 +18,7 @@ class UserDataService{
     public private(set) var email = ""
     public private(set) var name = ""
     
-    
-    func setUserData(id: String, color: String, avatarName: String, email: String, name: String){
+    func setUserData(id: String, color: String, avatarName: String, email: String, name: String) {
         self.id = id
         self.avatarColor = color
         self.avatarName = avatarName
@@ -26,16 +26,14 @@ class UserDataService{
         self.name = name
     }
     
-    func setAvatarName(avatarName: String){
+    func setAvatarName(avatarName: String) {
         self.avatarName = avatarName
     }
     
-    func returnUIColor(components: String) -> UIColor{
-        
+    func returnUIColor(components: String) -> UIColor {
         let scanner = Scanner(string: components)
         let skipped = CharacterSet(charactersIn: "[], ")
         let comma = CharacterSet(charactersIn: ",")
-        
         scanner.charactersToBeSkipped = skipped
         
         var r, g, b, a : NSString?
@@ -62,7 +60,7 @@ class UserDataService{
         return newUIColor
     }
     
-    func logoutUser(){
+    func logoutUser() {
         id = ""
         avatarName = ""
         avatarColor = ""
@@ -72,5 +70,18 @@ class UserDataService{
         AuthService.instance.userEmail = ""
         AuthService.instance.authToken = ""
     }
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
+
