@@ -26,5 +26,8 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: notif, object: nil)
             })
         }
+        MessageService.instance.findAllChannel { (success) in
+            
+        }
     }
 }
