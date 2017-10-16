@@ -2,15 +2,15 @@
 //  AddChannelVC.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 15/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
 import UIKit
 
 class AddChannelVC: UIViewController {
-    //Outlets
     
+    // Outlets
     @IBOutlet weak var nameTxt: UITextField!
     @IBOutlet weak var chanDesc: UITextField!
     @IBOutlet weak var bgView: UIView!
@@ -20,11 +20,6 @@ class AddChannelVC: UIViewController {
         setupView()
     }
     
-    @IBAction func closeModalPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    
     @IBAction func createChannelPressed(_ sender: Any) {
         guard let channelName = nameTxt.text , nameTxt.text != "" else { return }
         guard let channelDesc = chanDesc.text else { return }
@@ -33,6 +28,10 @@ class AddChannelVC: UIViewController {
                 self.dismiss(animated: true, completion: nil)
             }
         }
+    }
+
+    @IBAction func closeModalPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     func setupView() {

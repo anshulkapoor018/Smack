@@ -2,19 +2,19 @@
 //  AvatarPickerVC.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 13/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
 import UIKit
 
 class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-
-    //Outlets
+    
+    // Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
-    //Variables
+    // Variables
     var avatarType = AvatarType.dark
     
     override func viewDidLoad() {
@@ -32,14 +32,14 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-         return 1
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 28 
+        return 28
     }
     
-    @IBAction func segmentCotrolChanged(_ sender: Any) {
+    @IBAction func segmentControlChanged(_ sender: Any) {
         if segmentControl.selectedSegmentIndex == 0 {
             avatarType = .dark
         } else {
@@ -49,6 +49,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         var numOfColumns : CGFloat = 3
         if UIScreen.main.bounds.width > 320 {
             numOfColumns = 4
@@ -57,15 +58,14 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         let spaceBetweenCells : CGFloat = 10
         let padding : CGFloat = 40
         let cellDimension = ((collectionView.bounds.width - padding) - (numOfColumns - 1) * spaceBetweenCells) / numOfColumns
-        
-        return CGSize(width: cellDimension, height: cellDimension  )
+        return CGSize(width: cellDimension, height: cellDimension)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if avatarType == .dark{
-            UserDataService.instance.setAvatarName(avatarName: "dark\(indexPath.item )")
-        } else{
-            UserDataService.instance.setAvatarName(avatarName: "light\(indexPath.item )")
+        if avatarType == .dark {
+            UserDataService.instance.setAvatarName(avatarName: "dark\(indexPath.item)")
+        } else {
+            UserDataService.instance.setAvatarName(avatarName: "light\(indexPath.item)")
         }
         self.dismiss(animated: true, completion: nil)
     }
@@ -73,4 +73,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
+
 }

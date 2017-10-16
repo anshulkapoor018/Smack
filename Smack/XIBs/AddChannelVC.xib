@@ -16,9 +16,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddChannelVC" customModule="Smack" customModuleProvider="target">
             <connections>
-                <outlet property="bgView" destination="Dl9-hD-u6Z" id="0WM-to-bU0"/>
-                <outlet property="chanDesc" destination="hXx-Gv-WHB" id="x6R-Tu-a7R"/>
-                <outlet property="nameTxt" destination="Q4H-uT-Lxl" id="6gk-VT-SOM"/>
+                <outlet property="bgView" destination="Dl9-hD-u6Z" id="kLx-ie-Mbk"/>
+                <outlet property="chanDesc" destination="hXx-Gv-WHB" id="wsb-WA-FHK"/>
+                <outlet property="nameTxt" destination="Q4H-uT-Lxl" id="pXR-3M-emq"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -57,7 +57,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="createChannelPressed:" destination="-1" eventType="touchUpInside" id="0kJ-R1-KAn"/>
+                                <action selector="createChannelPressed:" destination="-1" eventType="touchUpInside" id="2pB-5y-eJI"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJj-oc-nXH">
@@ -68,7 +68,7 @@
                             </constraints>
                             <state key="normal" image="closeButton"/>
                             <connections>
-                                <action selector="closeModalPressed:" destination="-1" eventType="touchUpInside" id="Rp9-kv-4I9"/>
+                                <action selector="closeModalPressed:" destination="-1" eventType="touchUpInside" id="MgV-qX-aMF"/>
                             </connections>
                         </button>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-Xa-3T7">

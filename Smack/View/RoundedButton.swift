@@ -2,7 +2,7 @@
 //  RoundedButton.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 13/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
@@ -10,8 +10,9 @@ import UIKit
 
 @IBDesignable
 class RoundedButton: UIButton {
-    @IBInspectable var cornerRadius: CGFloat = 5.0 {
-        didSet{
+    
+    @IBInspectable var cornerRadius: CGFloat = 3.0 {
+        didSet {
             self.layer.cornerRadius = cornerRadius
         }
     }
@@ -25,7 +26,7 @@ class RoundedButton: UIButton {
         self.setupView()
     }
     
-    func setupView(){
-         self.layer.cornerRadius = cornerRadius
+    func setupView() {
+        self.layer.cornerRadius = cornerRadius
     }
 }

@@ -2,7 +2,7 @@
 //  UserDataService.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 13/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
@@ -70,5 +70,19 @@ class UserDataService {
         AuthService.instance.userEmail = ""
         AuthService.instance.authToken = ""
         MessageService.instance.clearChannels()
-    } 
+        MessageService.instance.clearMessages()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

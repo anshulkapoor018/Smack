@@ -2,18 +2,17 @@
 //  ChannelVC.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 11/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
 import UIKit
 
 class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    //Outlets
     
-    @IBOutlet weak var userImg: CircleImage!
+    // Outlets
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var userImg: CircleImage!
     @IBOutlet weak var tableView: UITableView!
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
 
@@ -22,7 +21,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
-        NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: notif, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.channelsLoaded(_:)), name: NOTIF_CHANNELS_LOADED, object: nil)
         
         SocketService.instance.getChannel { (success) in
@@ -53,7 +52,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             performSegue(withIdentifier: TO_LOGIN, sender: nil)
         }
     }
-    
     
     @objc func userDataDidChange(_ notif: Notification) {
         setupUserInfo()
@@ -100,4 +98,16 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         NotificationCenter.default.post(name: NOTIF_CHANNEL_SELECTED, object: nil)
         self.revealViewController().revealToggle(animated: true)
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

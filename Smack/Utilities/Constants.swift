@@ -2,7 +2,7 @@
 //  Constants.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 12/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
@@ -17,13 +17,13 @@ let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 let URL_GET_CHANNELS = "\(BASE_URL)channel/"
-let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel"
+let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel/"
 
 // Colors
 let smackPurplePlaceholder = #colorLiteral(red: 0.3254901961, green: 0.4215201139, blue: 0.7752227187, alpha: 0.5)
 
 // Notification Constants
-let notif = Notification.Name("notifUserDataChanged")
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
 let NOTIF_CHANNELS_LOADED = Notification.Name("channelsLoaded")
 let NOTIF_CHANNEL_SELECTED = Notification.Name("chanenlSelected")
 
@@ -47,4 +47,7 @@ let BEARER_HEADER = [
     "Authorization":"Bearer \(AuthService.instance.authToken)",
     "Content-Type": "application/json; charset=utf-8"
 ]
+
+
+
 

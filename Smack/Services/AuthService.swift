@@ -2,7 +2,7 @@
 //  AuthService.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 13/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
@@ -140,5 +140,14 @@ class AuthService {
         
         UserDataService.instance.setUserData(id: id, color: color, avatarName: avatarName, email: email, name: name)
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
-

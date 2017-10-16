@@ -2,7 +2,7 @@
 //  MessageService.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 15/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
@@ -15,9 +15,9 @@ class MessageService {
     static let instance = MessageService()
     
     var channels = [Channel]()
-    var selectedChannel : Channel?
     var messages = [Message]()
-
+    var selectedChannel : Channel?
+    
     func findAllChannel(completion: @escaping CompletionHandler) {
         Alamofire.request(URL_GET_CHANNELS, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             
@@ -35,13 +35,13 @@ class MessageService {
                     completion(true)
                 }
             } else {
-                debugPrint(response.result.error as Any)
                 completion(false)
+                debugPrint(response.result.error as Any)
             }
         }
     }
-
-    func findAllMessageForChannel(channelId: String, completion: @escaping CompletionHandler){
+    
+    func findAllMessageForChannel(channelId: String, completion: @escaping CompletionHandler) {
         Alamofire.request("\(URL_GET_MESSAGES)\(channelId)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             
             if response.result.error == nil {
@@ -53,29 +53,43 @@ class MessageService {
                         let channelId = item["channelId"].stringValue
                         let id = item["_id"].stringValue
                         let userName = item["userName"].stringValue
-                        let userAvatar  = item["userAvatar"].stringValue
+                        let userAvatar = item["userAvatar"].stringValue
                         let userAvatarColor = item["userAvatarColor"].stringValue
                         let timeStamp = item["timeStamp"].stringValue
-                
+                        
                         let message = Message(message: messageBody, userName: userName, channelId: channelId, userAvatar: userAvatar, userAvatarColor: userAvatarColor, id: id, timeStamp: timeStamp)
                         self.messages.append(message)
                     }
-                    //print(self.messages)
+                    print(self.messages)
                     completion(true)
                 }
             } else {
                 debugPrint(response.result.error as Any)
                 completion(false)
             }
-        
         }
     }
     
-    func clearMessages(){
+    func clearMessages() {
         messages.removeAll()
     }
-        
+    
     func clearChannels() {
         channels.removeAll()
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

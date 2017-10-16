@@ -2,7 +2,7 @@
 //  ProfileVC.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 14/10/17.
+//  Created by Anshul Kapoor on 16/10/17.
 //  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
@@ -23,7 +23,7 @@ class ProfileVC: UIViewController {
     
     @IBAction func logoutPressed(_ sender: Any) {
         UserDataService.instance.logoutUser()
-        NotificationCenter.default.post(name: notif, object: nil)
+        NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         dismiss(animated: true, completion: nil)
     }
     
@@ -44,5 +44,8 @@ class ProfileVC: UIViewController {
     @objc func closeTap(_ recognizer: UITapGestureRecognizer) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
+    
+    
 }
-
