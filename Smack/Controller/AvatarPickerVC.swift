@@ -2,8 +2,8 @@
 //  AvatarPickerVC.swift
 //  Smack
 //
-//  Created by Jonny B on 7/17/17.
-//  Copyright © 2017 Jonny B. All rights reserved.
+//  Created by Anshul Kapoor on 16/10/17.
+//  Copyright © 2017 Anshul Kapoor. All rights reserved.
 //
 
 import UIKit
