@@ -2,8 +2,8 @@
 //  CreateAccountVC.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 16/10/17.
-//  Copyright © 2017 Anshul Kapoor. All rights reserved.
+//  Created by Jonny B on 7/14/17.
+//  Copyright © 2017 Jonny B. All rights reserved.
 //
 
 import UIKit
@@ -85,9 +85,9 @@ class CreateAccountVC: UIViewController {
     
     func setupView() {
         spinner.isHidden = true
-        usernameTxt.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
-        emailTxt.attributedPlaceholder = NSAttributedString(string: "Email ID", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
-        passTxt.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        passTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap))
         view.addGestureRecognizer(tap)

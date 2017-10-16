@@ -2,8 +2,8 @@
 //  LoginVC.swift
 //  Smack
 //
-//  Created by Anshul Kapoor on 16/10/17.
-//  Copyright © 2017 Anshul Kapoor. All rights reserved.
+//  Created by Jonny B on 7/14/17.
+//  Copyright © 2017 Jonny B. All rights reserved.
 //
 
 import UIKit
@@ -51,7 +51,7 @@ class LoginVC: UIViewController {
     
     func setUpView() {
         spinner.isHidden = true
-        usernameTxt.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
-        passwordTxt.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
+        passwordTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor: smackPurplePlaceholder])
     }
 }
