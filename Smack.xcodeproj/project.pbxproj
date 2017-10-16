@@ -35,6 +35,7 @@
 		D8F2CD011F8E5597000461F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2CCFF1F8E5597000461F5 /* Main.storyboard */; };
 		D8F2CD031F8E5597000461F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F2CD021F8E5597000461F5 /* Assets.xcassets */; };
 		D8F2CD061F8E5597000461F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2CD041F8E5597000461F5 /* LaunchScreen.storyboard */; };
+		D8FF0B3D1F94A2970035BB09 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FF0B3C1F94A2970035BB09 /* KeyboardBoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		D8F2CD021F8E5597000461F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F2CD051F8E5597000461F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F2CD071F8E5597000461F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8FF0B3C1F94A2970035BB09 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		F14C2FC9F9A6A69747024D2F /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +128,7 @@
 				D86B3CDF1F913FFB00FEEA60 /* AvatarCell.swift */,
 				D86A0F031F91FED000823400 /* CircleImage.swift */,
 				D85347041F93CA85000E86BE /* ChannelCell.swift */,
+				D8FF0B3C1F94A2970035BB09 /* KeyboardBoundView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			files = (
 				D87A33841F8EA4D80087DB0D /* SWRevealViewController.m in Sources */,
 				D87A33831F8EA4CB0087DB0D /* SWRevealViewController.h in Sources */,
+				D8FF0B3D1F94A2970035BB09 /* KeyboardBoundView.swift in Sources */,
 				D86B3CE01F913FFB00FEEA60 /* AvatarCell.swift in Sources */,
 				D82C04A71F8FB33700C96FC3 /* LoginVC.swift in Sources */,
 				D85346FC1F93BD70000E86BE /* ProfileVC.swift in Sources */,

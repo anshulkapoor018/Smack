@@ -14,8 +14,8 @@
             <string>HelveticaNeue</string>
             <string>HelveticaNeue-Bold</string>
         </array>
-        <array key="Papyrus.ttc">
-            <string>Papyrus</string>
+        <array key="VerdanaBold.ttf">
+            <string>Verdana-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -555,8 +555,8 @@
                                         <state key="normal" image="smackBurger"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0M-zg-RfX">
-                                        <rect key="frame" x="155" y="39.5" width="65" height="34"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="22"/>
+                                        <rect key="frame" x="147" y="42.5" width="81.5" height="27"/>
+                                        <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="22"/>
                                         <color key="textColor" red="0.97990991794622495" green="0.98272956302162506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -570,11 +570,32 @@
                                     <constraint firstAttribute="bottom" secondItem="6qR-vb-AFf" secondAttribute="bottom" constant="12" id="W3T-co-gFk"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3bz-75-rbX">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ngd-mz-6o6"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMF-DI-xAX">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMsgPressed:" destination="WKB-tr-ATh" eventType="touchUpInside" id="Wve-zD-gJ9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="JMF-DI-xAX" firstAttribute="centerY" secondItem="3bz-75-rbX" secondAttribute="centerY" id="1sE-Jn-yF2"/>
                             <constraint firstItem="Mzu-jd-KMV" firstAttribute="top" secondItem="p5j-Pn-xEE" secondAttribute="top" id="K0G-Mz-Ugt"/>
+                            <constraint firstItem="3bz-75-rbX" firstAttribute="bottom" secondItem="s2l-KN-ooa" secondAttribute="bottom" id="Mts-G4-Gqd"/>
+                            <constraint firstItem="s2l-KN-ooa" firstAttribute="trailing" secondItem="3bz-75-rbX" secondAttribute="trailing" id="ON6-r0-CTx"/>
+                            <constraint firstItem="s2l-KN-ooa" firstAttribute="trailing" secondItem="JMF-DI-xAX" secondAttribute="trailing" constant="8" id="PqV-l7-SJe"/>
                             <constraint firstItem="Mzu-jd-KMV" firstAttribute="trailing" secondItem="s2l-KN-ooa" secondAttribute="trailing" id="YC1-Y8-wMz"/>
+                            <constraint firstItem="3bz-75-rbX" firstAttribute="leading" secondItem="s2l-KN-ooa" secondAttribute="leading" id="dpk-4U-jC2"/>
                             <constraint firstItem="Mzu-jd-KMV" firstAttribute="leading" secondItem="s2l-KN-ooa" secondAttribute="leading" id="pCU-Gk-EBW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="s2l-KN-ooa"/>
@@ -582,11 +603,12 @@
                     <connections>
                         <outlet property="channelNameLbl" destination="M0M-zg-RfX" id="DHL-Ct-CgY"/>
                         <outlet property="menuBtn" destination="6qR-vb-AFf" id="mxi-MG-EDP"/>
+                        <outlet property="messageTxtBox" destination="3bz-75-rbX" id="8XE-FM-KE9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AAI-ih-47f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1478" y="509"/>
+            <point key="canvasLocation" x="1477.5999999999999" y="508.69565217391306"/>
         </scene>
     </scenes>
     <resources>
@@ -594,6 +616,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
