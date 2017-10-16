@@ -74,7 +74,7 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="QUh-Xa-3T7">
                             <rect key="frame" x="42.5" y="107" width="250" height="86"/>
                             <subviews>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4H-uT-Lxl">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q4H-uT-Lxl">
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="PTd-aJ-Mgw"/>
@@ -91,7 +91,7 @@
                                         <constraint firstAttribute="height" constant="2" id="4Xi-L1-sUL"/>
                                     </constraints>
                                 </view>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXx-Gv-WHB">
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXx-Gv-WHB">
                                     <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="250" id="Dp3-9f-ta1"/>

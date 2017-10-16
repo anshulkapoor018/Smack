@@ -200,7 +200,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="GAz-3P-JAM">
                                 <rect key="frame" x="63" y="160" width="250" height="86"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfs-WA-EBb">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfs-WA-EBb">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="JoF-as-Gt0"/>
@@ -217,7 +217,7 @@
                                             <constraint firstAttribute="width" constant="250" id="dme-Ze-Mve"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPW-2P-9fO">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPW-2P-9fO">
                                         <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="1NX-Cs-Yvs"/>
@@ -317,7 +317,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="amp-cI-wJh">
                                 <rect key="frame" x="63" y="123" width="250" height="136"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sLy-G0-43D">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sLy-G0-43D">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="trb-dD-fok"/>
@@ -334,7 +334,7 @@
                                             <constraint firstAttribute="width" constant="250" id="r88-c1-scx"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVU-zo-PO1">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVU-zo-PO1">
                                         <rect key="frame" x="0.0" y="50" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="gqq-7e-zuQ"/>
@@ -351,7 +351,7 @@
                                             <constraint firstAttribute="width" constant="250" id="nFY-If-6kK"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4R-D4-KNE">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j4R-D4-KNE">
                                         <rect key="frame" x="0.0" y="100" width="250" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="hXP-Gt-mac"/>
@@ -636,14 +636,14 @@
                                                         <constraint firstAttribute="width" constant="50" id="tpe-Yl-9if"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JonnyB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-2c-W6k">
-                                                    <rect key="frame" x="70" y="8" width="58" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ansh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNP-2c-W6k">
+                                                    <rect key="frame" x="70" y="8" width="39" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kws-RB-i9e">
-                                                    <rect key="frame" x="134" y="9.5" width="61" height="17"/>
+                                                    <rect key="frame" x="115" y="9.5" width="61" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -677,10 +677,17 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aia-OL-2SR">
+                                <rect key="frame" x="6" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="22a-Xj-KRE" firstAttribute="leading" secondItem="h5m-Fh-EaB" secondAttribute="leading" id="2BE-fB-1Ms"/>
+                            <constraint firstItem="Ieg-c8-V07" firstAttribute="top" secondItem="aia-OL-2SR" secondAttribute="bottom" constant="6" id="8Ws-ev-1NQ"/>
                             <constraint firstAttribute="trailing" secondItem="CFM-Lq-Hbu" secondAttribute="trailing" constant="8" id="8Z9-Rl-TsC"/>
                             <constraint firstItem="Ieg-c8-V07" firstAttribute="leading" secondItem="h5m-Fh-EaB" secondAttribute="leading" id="Gts-B0-EeY"/>
                             <constraint firstAttribute="trailing" secondItem="d89-Z9-t2t" secondAttribute="trailing" id="Jga-Yu-nht"/>
@@ -691,6 +698,7 @@
                             <constraint firstItem="CFM-Lq-Hbu" firstAttribute="centerY" secondItem="Ieg-c8-V07" secondAttribute="centerY" id="a2d-It-eqG"/>
                             <constraint firstItem="d89-Z9-t2t" firstAttribute="leading" secondItem="h5m-Fh-EaB" secondAttribute="leading" id="g3o-bH-vnv"/>
                             <constraint firstItem="d89-Z9-t2t" firstAttribute="top" secondItem="22a-Xj-KRE" secondAttribute="bottom" id="lhw-1M-GKd"/>
+                            <constraint firstItem="aia-OL-2SR" firstAttribute="leading" secondItem="h5m-Fh-EaB" secondAttribute="leading" constant="6" id="pOe-84-bw3"/>
                             <constraint firstAttribute="trailing" secondItem="22a-Xj-KRE" secondAttribute="trailing" id="ws8-sZ-UAD"/>
                         </constraints>
                     </view>
@@ -700,6 +708,7 @@
                         <outlet property="messageTxtBox" destination="Ieg-c8-V07" id="BYN-mN-jbz"/>
                         <outlet property="sendBtn" destination="CFM-Lq-Hbu" id="9Gk-K9-9wI"/>
                         <outlet property="tableView" destination="d89-Z9-t2t" id="EOM-Tl-aJK"/>
+                        <outlet property="typingUsersLbl" destination="aia-OL-2SR" id="aoO-OB-fgL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7K0-ge-5ne" userLabel="First Responder" sceneMemberID="firstResponder"/>
